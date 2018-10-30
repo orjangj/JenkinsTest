@@ -5,13 +5,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh './run_hello'
+                sh 'python --version'
             }
-        }
-    }
-    post {
-        always {
-            junit 'build/reports/**/*.xml'
         }
     }
 }
