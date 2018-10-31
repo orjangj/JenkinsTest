@@ -1,9 +1,9 @@
 pipeline {
-  agent { docker 'python:2.7'}
   stages {
     stage('Example') {
+      agent {docker 'python:2.7'}
       steps {
-        echo 'python --version'
+        python --version
       }
     }
   }
