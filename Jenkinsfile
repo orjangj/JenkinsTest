@@ -3,7 +3,7 @@ pipeline {
     stage('Example') {
       agent {docker 'python:2.7'}
       steps {
-        python --version
+        sh 'python --version'
       }
     }
   }
