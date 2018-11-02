@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Test3') {
       steps {
-        sh './run_hello.sh'
+        bash './run_hello.sh'
       }
     }
   }
