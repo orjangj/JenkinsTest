@@ -7,10 +7,14 @@ pipeline {
       }
     }
     stage('Test2') {
+      steps{
         sh 'bash ./run_hello.sh'
+      }
     }
     stage('Test3') {
+      steps {
         sh './run_hello.sh'
+      }
     }
   }
 }
