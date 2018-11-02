@@ -11,10 +11,5 @@ pipeline {
         sh 'bash ./run_hello.sh'
       }
     }
-    stage('Test3') {
-      steps {
-        bash './run_hello.sh'
-      }
-    }
   }
 }
